@@ -1,0 +1,64 @@
+@font-face
+    { font-family: 'Uni Sans';
+      src: url(fonts/unisansheavy.otf);
+      font-style: normal;
+    }
+
+body {
+    background-image: url("img/loading.svg");
+    height: 100vh;
+    width: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "Row1 Row1 Row1 Row1" "Row2 Row2 Row2 Row2" "Row3 Row3 Row3 Row3";
+}
+
+.Row1 { grid-area: Row1; }
+
+.Row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "Row4 Row4 Row4" "Row5 Row5 Row5";
+  grid-area: Row2;
+}
+
+.Row4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "Row6 Row6 Row6" "Row7 Row7 Row7";
+  grid-area: Row2;
+}
+
+
+.Row4 { grid-area: Row4;
+        font-family: 'Comichate';
+        font-size: 50pt;
+        color: #ffffff;
+        padding-left: 10px;
+        text-align: left;
+        justify-content: center;
+        align-items: center;}
+
+.Row5 { grid-area: Row5;
+        font-family: 'Comichate';
+        font-size: 50pt;
+        color: #ffffff;
+        padding-left: 10px;
+        text-align: left;
+        justify-content: center;
+        align-items: center;}
+
+.Row3 { grid-area: Row3; }
+
+.Row6 { grid-area: Row6; }
+
+.Row7 { grid-area: Row7; }

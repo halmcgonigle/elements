@@ -1,0 +1,128 @@
+@font-face
+          { font-family: 'Comichate';
+            src: url(fonts/comichate.otf);
+            font-style: normal;
+          }
+
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows:  15% 75% 10%;
+  grid-template-areas: "Row1" "Row2" "Row3";
+}
+
+.Row1 { grid-area: Row1;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #000;
+        }
+
+.Row1 h1 {font-family: 'Comichate';
+          font-size: 50pt;
+          color: #000;
+          text-align: center;}
+
+.Row1 h1:hover {color: grey;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;}
+
+.Row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Col1 Col2 Col3";
+  grid-area: Row2;
+
+}
+
+.Row2 {
+  background: url("img/content-background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.Row3 { grid-area: Row3;
+        background-color: #fff;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #000;
+        }
+
+.Row3 b { font-family: 'Comichate';
+          font-size: 25pt;
+          color: #000;
+          cursor: pointer;
+          }
+
+.Row4 { grid-area: Row4;
+        justify-content: center;
+        align-items: center;
+        background-color: #F1F1F7;
+        font-family: 'Fresca';
+        font-size: 15pt;
+        color: #fff;
+        }
+
+.Row4 p {font-family: 'Poppins';
+        font-size: 12pt;
+        color: #000;
+        padding-left: 15px;
+        }
+
+.Row4 {height: 90%;}
+
+.Col1 { grid-area: Col1; }
+
+.Col2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "Col4 Col5" "Row4 Row4";
+  grid-area: Col2;
+}
+
+.Col3 { grid-area: Col3; }
+
+.Col4 { grid-area: Col4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;}
+
+.Col4 img {height: 200px; width: 200px;}
+
+.Col5 img {height: 200px; width: 200px;}
+
+.Col5 { grid-area: Col5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+
+.tab-content p {font-family: 'Poppins', sans-serif;
+                font-size: 12pt;
+                color: #000;}
+
+.Row3 a {text-decoration: none;
+        color: #000;}
+
+.Row3 a:hover {text-decoration: none;
+              color: grey;
+              -webkit-transition-duration: 0.4s;
+              transition-duration: 0.4s;
+              cursor: pointer;}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width:320px) and (max-width : 768px) {
+
+img { padding-left: 5px;
+      padding-right: 5px;}
+
+.Row4 p {font-size: 10pt;}

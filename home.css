@@ -1,0 +1,63 @@
+html {
+  background: url("img/home-background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 30% 25% 5%;
+  grid-template-areas: "Row1" "Row2" "Row3" "Row4";
+}
+
+.Row1 { grid-area: Row1;
+        display: 40vh;
+        align-items: center;
+        justify-content: center;}
+
+.Row1 img {height: 100%; width: 100%;}
+
+.Row2 { grid-area: Row2;
+        display: grid;
+        height: 30vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Fresca';
+        font-size: 20pt;}
+
+.Row2 b {color: red;}
+
+.Row3 { grid-area: Row3;
+        display: grid;
+        height: 25vh;
+        align-items: center;
+        justify-content: center;}
+
+.Row3 a { text-decoration: none;
+          font-family: 'Poppins';
+          font-size: 12pt;
+          color: #fff;}
+
+.Row4 { grid-area: Row4;
+        height: 5vh;}
+
+.button { background-color: #000;
+          border: none;
+          font-family: 'Poppins';
+          font-size: 12pt;
+          color: #fff;
+          padding: 10px 50px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin: 4px 20px;
+          cursor: pointer;
+          border-radius: 10px;
+        }
+
+.button:hover {background-color: grey;}
